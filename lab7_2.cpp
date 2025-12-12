@@ -1,5 +1,34 @@
+#include <iostream>
+#include <string>
+using namespace std;
 //Dialog of the first example is given below.
+int main(){
 
+    int id;
+    string Ans1,Ans2,Ans3,Ans4;
+
+    cout<<"Fahsai: Sawadee ka...Can you tell me your name?\n";
+    cout<<"?????: ";
+    getline(cin,Ans1);
+    cout<<"Fahsai: Wow!!! "<<Ans1<<" is a really cool name.\n";
+    cout<<"Fahsai: I think you are an Engineering student. What is your student ID?\n";
+    cout<<Ans1<<": ";
+    cin>>id;
+    cin.ignore();
+    cout<<"Fahsai: I think you may be GEAR "<<(id/10000000)-12<<". I have a free movie ticket for you.\n";
+    cout<<"Fahsai: Let's go to the cinema together!!!\n";
+    cout<<"Fahsai: What movie do you want to watch?\n";
+    cout<<Ans1<<": ";
+    getline(cin,Ans2);
+    cout<<"Fahsai: So....which day are you free to go with me?\n";
+    cout<<Ans1<<": ";
+    getline(cin,Ans3);
+    cout<<"Fahsai: "<<Ans3<<"....that is OK!!! I'm looking forward to watching "<<Ans2<<" with you.\n";
+    cout<<Ans1<<": ";
+    getline(cin,Ans4);
+    cout<<"Fahsai: 555+ see you "<<Ans3<<". Bye Bye \\(^ ^)/";
+
+}
 /*
 Fahsai: Sawadee ka...Can you tell me your name?
 ?????: Luke Skywalker
